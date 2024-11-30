@@ -1,5 +1,7 @@
+//这是那个oi排名
 <template>
   <Row type="flex" justify="space-around">
+
     <Col :span="22">
     <Panel :padding="10">
       <div slot="title">{{$t('m.OI_Ranklist')}}</div>

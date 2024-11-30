@@ -1,6 +1,6 @@
 <template>
   <div class="accordion">
-     //<div style="background-color: green; width: 200px; height: 300px; margin: 0 auto; z-index: 999;"></div>
+    
     <header>
       <h2>{{title}}</h2>
       <div class="header_right">
@@ -32,8 +32,10 @@
 </script>
 
 <style lang="less" scoped>
+
 .accordion{
-  border: 1px solid #eaeefb;
+  border: 1px solid #f9fafc;
+  
   header{
     position: relative;
     h2{

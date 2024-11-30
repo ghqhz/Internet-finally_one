@@ -1,5 +1,6 @@
 <template>
   <div class="flex-container">
+
     <div id="contest-main">
       <!--children-->
       <transition name="fadeInUp">

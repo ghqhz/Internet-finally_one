@@ -1,5 +1,7 @@
+//我的设置，账户设置那个位置
 <template>
   <div class="setting-main">
+
     <div class="flex-container">
       <div class="left">
         <p class="section-title">{{$t('m.ChangePassword')}}</p>

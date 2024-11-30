@@ -1,5 +1,7 @@
+//这个是排名里面那个acm排名。
 <template>
   <Row type="flex" justify="space-around">
+
     <Col :span="22">
     <Panel :padding="10">
       <div slot="title">{{$t('m.ACM_Ranklist')}}</div>

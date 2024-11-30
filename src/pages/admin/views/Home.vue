@@ -64,6 +64,7 @@
         }
       })
     },
+    
     methods: {
       handleCommand (command) {
         if (command === 'logout') {

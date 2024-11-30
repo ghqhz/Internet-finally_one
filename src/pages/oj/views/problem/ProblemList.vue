@@ -1,5 +1,7 @@
+//这几个是那个问题栏目，应该问题不大
 <template>
   <Row type="flex" :gutter="18">
+
     <Col :span=19>
     <Panel shadow>
       <div slot="title">{{$t('m.Problem_List')}}</div>

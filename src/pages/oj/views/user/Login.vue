@@ -1,3 +1,5 @@
+//这个是咋说呢，就是登录的时候，如果是正常途径登录就是这个，如果原本登录的时候，从另一个界面退出再刷新就是genenral里面那个登录，脑壳疼。这俩玩意原理还不太一样，那个页面我感觉
+//改的挺好看，套到这边全乱套，麻烦。
 <template>
   <div>
     <Form ref="formLogin" :model="formLogin" :rules="ruleLogin">

@@ -1,18 +1,16 @@
 //这个是整个首页页面的这个标志，就是http://localhost:8080/登录过后这个以及所有的除了后台管理以外好像全用的这一个东西
+//这是个母空间，除了后台管理以外的所有页面都是建立在这个的基础上。
+//不过onlinejudge那一溜仍然在这个之上。
 <template>
   <div>
-
     <NavBar></NavBar>
     <div class="content-app">
       <transition name="fadeInUp" mode="out-in">
         <router-view></router-view>
       </transition>
       <div class="footer">
-        <p v-html="website.website_footer"></p>
-        <p>Powered by <a href="https://github.com/QingdaoU/OnlineJudge">OnlineJudge</a>
-          <span v-if="version">&nbsp; Version: {{ version }}</span>
-        </p>
-      </div>
+    <p>制作人：计科导论第九小组</p>
+</div>
     </div>
     <BackTop></BackTop>
   </div>
@@ -95,7 +93,7 @@
     text-align: center;
     font-size: small;
   }
-
+//这个是安格上浮的动作所需要的时间。
   .fadeInUp-enter-active {
     animation: fadeInUp .8s;
   }

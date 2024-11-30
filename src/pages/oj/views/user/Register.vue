@@ -1,5 +1,7 @@
+//顾名思义，那个注册页面，这个是容易理解的。这玩意个人感觉需要变得就是把那一堆鬼logo扣完了就行了。
 <template>
 <div>
+
     <Form ref="formRegister" :model="formRegister" :rules="ruleRegister">
       <FormItem prop="username">
         <Input type="text" v-model="formRegister.username" :placeholder="$t('m.RegisterUsername')" size="large" @on-enter="handleRegister">

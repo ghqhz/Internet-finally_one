@@ -1,5 +1,7 @@
+//我的设置，安全设置
 <template>
   <div class="setting-main">
+
     <p class="section-title">{{$t('m.Sessions')}}</p>
     <div class="flex-container setting-content">
       <template v-for="session in sessions">

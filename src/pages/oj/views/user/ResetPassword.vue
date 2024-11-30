@@ -1,5 +1,7 @@
+//没试出来这是干啥，重置密码的时候并不是这个页面啊，是不是闪太快了导致没法动。
 <template>
   <Panel :padding="30" class="container">
+
     <div slot="title" class="center">{{$t('m.Reset_Password')}}</div>
     <template v-if="!resetSuccess">
     <Form :model=formResetPassword ref="formResetPassword" :rules="ruleResetPassword">
