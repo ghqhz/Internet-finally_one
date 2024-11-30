@@ -2,11 +2,14 @@
 <template>
   <el-form :model="ruleForm2" :rules="rules2" ref="ruleForm2" label-position="left" label-width="0px"
       class="demo-ruleForm login-container">
-      <div style="position: absolute; top: 70; left: 0; margin: 0;"> <img src="./xiaohui.png" alt="同济大学校徽123" style="width: 250px; height: 200px;"> 
-      </div>
-            <div style="position: absolute; top: 70; right: 0; margin: 0;"> <img src="./xiaohui.png" alt="同济大学校徽123" style="width: 250px; height: 200px;"> 
-      </div>
-    <h3 class="title">{{$t('m.Welcome_to_Login')}}</h3>
+     <div style="position: absolute; top: 70px; left: 0; margin: 0;">
+      <img src="./xiaohui.png" alt="同济大学校徽" style="width: 250px; height: 200px; transition: transform 0.5s;">
+    </div>
+
+    <div style="position: absolute; top: 70px; right: 0; margin: 0;">
+      <img src="./xiaohui.png" alt="同济大学校徽123" style="width: 250px; height: 200px;transition: transform 0.5s;">
+    </div>
+    <h3 class="title">{{$t('Welcome_to_Login_tongji university')}}</h3>
     <el-form-item prop="account">
       <el-input type="text" v-model="ruleForm2.account" auto-complete="off" :placeholder="$t('m.username')" @keyup.enter.native="handleLogin"></el-input>
     </el-form-item>
@@ -19,6 +22,15 @@
     </el-form-item>
   </el-form>
 </template>
+
+
+
+<style>
+  img:hover {
+    transform: rotate(360deg);
+  }
+</style>
+
 
 <script>
   import api from '../../api'
@@ -72,7 +84,8 @@
     margin: 180px auto;
     width: 350px;
     padding: 35px 35px 15px 35px;
-    background: #fff;
+      background: url('./beijing.png') center center no-repeat; /* 插入背景图片样式 */
+    background-size: cover; /* 背景图片填充整个容器 */
     border: 1px solid #eaeaea;
     box-shadow: 0 0 25px #cac6c6;
     .title {

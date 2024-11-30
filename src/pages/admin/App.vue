@@ -22,14 +22,18 @@
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
-    background-color:white;
-  }
+    background-color:white /* 将背景色设为纯透明 */
+  /* 其他样式 */
+};
+  
 //这个颜色是登录页面的颜色，所以这个应该是负责登录页面的那个配置
   #app {
     position: absolute;
     top: 10;
     bottom: 0;
     width: 100%;
+    //height:100%;
+    //background-color: white;
   }//这个20％是到左边的空间
  
 
