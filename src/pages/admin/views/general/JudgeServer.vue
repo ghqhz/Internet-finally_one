@@ -1,7 +1,9 @@
 //后台管理，常用设置，判题服务器
 <template>
   <div class="view">
-
+    <div style="background-color: green; width: 200px; height: 300px; margin: 0 auto; z-index: 999;"></div>
+    <div style="background-color: green; width: 200px; height: 300px; margin: 0 auto; z-index: 999;"></div>
+    <div style="background-color: green; width: 200px; height: 300px; margin: 0 auto; z-index: 999;"></div>
     <Panel :title="$t('m.Judge_Server_Token')">
       <code>{{ token }}</code>
     </Panel>
