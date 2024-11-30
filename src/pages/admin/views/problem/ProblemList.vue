@@ -1,5 +1,7 @@
+//后台管理 问题 问题列表
 <template>
   <div class="view">
+                                 
     <Panel :title="contestId ? this.$i18n.t('m.Contest_Problem_List') : this.$i18n.t('m.Problem_List')">
       <div slot="header">
         <el-input

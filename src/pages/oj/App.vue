@@ -1,5 +1,7 @@
+//这个是整个首页页面的这个标志，就是http://localhost:8080/登录过后这个以及所有的除了后台管理以外好像全用的这一个东西
 <template>
   <div>
+
     <NavBar></NavBar>
     <div class="content-app">
       <transition name="fadeInUp" mode="out-in">

@@ -1,5 +1,7 @@
+//后台管理，常用设置，用户管理
 <template>
   <div class="view">
+
     <Panel :title="$t('m.User_User') ">
       <div slot="header">
         <el-row :gutter="20">

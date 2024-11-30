@@ -18,6 +18,7 @@ const languages = [
 ]
 const messages = {}
 
+
 // combine admin and oj
 for (let lang of languages) {
   let locale = lang.value
@@ -28,7 +29,7 @@ for (let lang of languages) {
 }
 // load language packages
 export default new VueI18n({
-  locale: 'en-US',
+  locale: 'zh-CN',
   messages: messages
 })
 

@@ -1,5 +1,7 @@
+//后台管理 常用设置 系统配置，夫妇则这个页面的
 <template>
   <div class="view">
+
     <Panel :title="$t('m.SMTP_Config')">
       <el-form label-position="left" label-width="70px" :model="smtp">
         <el-row :gutter="20">

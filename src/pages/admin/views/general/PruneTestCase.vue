@@ -1,5 +1,7 @@
+//后台管理，常用设置，测试用例
 <template>
   <div>
+    
     <panel>
       <span slot="title">{{$t('m.Test_Case_Prune_Test_Case')}}
         <el-popover placement="right" trigger="hover">

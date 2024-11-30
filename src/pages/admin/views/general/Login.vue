@@ -1,6 +1,11 @@
+//这个是那个登录界面的东西，这玩意不会干扰到别人
 <template>
   <el-form :model="ruleForm2" :rules="rules2" ref="ruleForm2" label-position="left" label-width="0px"
-           class="demo-ruleForm login-container">
+      class="demo-ruleForm login-container">
+      <div style="position: absolute; top: 70; left: 0; margin: 0;"> <img src="./xiaohui.png" alt="同济大学校徽123" style="width: 250px; height: 200px;"> 
+      </div>
+            <div style="position: absolute; top: 70; right: 0; margin: 0;"> <img src="./xiaohui.png" alt="同济大学校徽123" style="width: 250px; height: 200px;"> 
+      </div>
     <h3 class="title">{{$t('m.Welcome_to_Login')}}</h3>
     <el-form-item prop="account">
       <el-input type="text" v-model="ruleForm2.account" auto-complete="off" :placeholder="$t('m.username')" @keyup.enter.native="handleLogin"></el-input>
@@ -80,3 +85,4 @@
     }
   }
 </style>
+

@@ -1,5 +1,7 @@
+//这玩意貌似也是一个基地 就是和刚才那个差不多，脑壳疼
 <template>
   <div class="container">
+
     <div>
       <SideMenu></SideMenu>
     </div>
@@ -36,7 +38,8 @@
   import KatexEditor from '@admin/components/KatexEditor.vue'
   import api from '../api'
 
-  export default {
+  export default 
+  {
     name: 'app',
     data () {
       return {

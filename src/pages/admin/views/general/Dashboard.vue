@@ -1,5 +1,7 @@
+//后台管理那个仪表盘，应该是负责这个的
 <template>
   <el-row type="flex" :gutter="20">
+
     <el-col :md="10" :lg="8">
       <el-card class="admin-info">
         <el-row :gutter="20">
