@@ -3,7 +3,6 @@
 //嗷，我知道了，这玩意是个组件，也就是说他就是一个模块，这种东西怎么说呢，可以改，但是改的时候你最好小心点。或者改的时候先去网上 查一下这玩意大概四干什么的
 <template>
   <div style="display: inline-block;">
-    
     <el-tooltip class="item" effect="dark" :content="name" placement="top">
       <el-button plain :icon="'el-icon-fa-' + icon" size="mini">
       </el-button>
@@ -26,3 +25,4 @@
     }
   }
 </script>
+

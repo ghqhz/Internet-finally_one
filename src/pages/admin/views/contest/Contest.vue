@@ -1,6 +1,5 @@
 <template>
   <div class="view">
-
     <Panel :title="title">
       <el-form label-position="top">
         <el-row :gutter="20">
