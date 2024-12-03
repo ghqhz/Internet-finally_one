@@ -1,3 +1,4 @@
+//Create里面有一个Sample，应该是这个
 <template>
   <div class="accordion">
     
@@ -7,6 +8,7 @@
         <slot name="header"></slot>
       </div>
     </header>
+   
     <div class="body" v-show="isOpen">
       <slot></slot>
     </div>

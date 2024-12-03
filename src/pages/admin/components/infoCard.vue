@@ -1,5 +1,7 @@
+//dashboard里面那个框，右边那个
 <template>
-  <el-card :body-style="{padding: 0, height: '100%'}" class="info-card">
+  <el-card :body-style="{padding: 0, height: '100%'}" class="info-card back" >
+   
     <el-row type="flex" class="info-card-container">
       <el-col :span="8" :style="{'background-color': color}" class="height-100">
         <i :class="['info-card-icon', icon]" :style="{'font-size': iconSize}"></i>
@@ -47,9 +49,20 @@
 
 <style lang="less" scoped>
   @card-height: 90px;
-  .height-100 {
-    height: 100%;
-  }
+.back
+{ background-color: rgba(0, 255, 255, 0.5); 
+  transition: background-color 0.3s; 
+  position: relative; 
+  overflow: hidden; 
+}
+
+.back:hover
+{ background-color: rgba(0, 255, 255, 0.7); 
+}
+
+.back::after{ content: ""; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 200%; height: 200%; background-color: rgba(255, 255, 255, 0.3); border-radius: 50%; transition: all 0.5s; pointer-events: none; }
+
+.back:hover::after{ width: 500%; height: 500%; opacity: 0; }
 
   .info-card {
     display: inline-block;

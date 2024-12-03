@@ -1,4 +1,5 @@
 <template>
+   
   <codemirror v-model="currentValue" :options="options" ref="editor"></codemirror>
 </template>
 <script>
